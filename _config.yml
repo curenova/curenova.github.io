@@ -42,10 +42,12 @@ social:
   #   url:
   # - title: instagram
   #   url: 
-  # - title: soundcloud
-  #   url: 
-  - title: github
-    url: https://curenova.github.io
+  - title: youtube
+    url: https://www.youtube.com/channel/UCvrnXD-6JE6PdixOdTbb-Sg
+  - title: soundcloud
+    url: https://soundcloud.com/renova-newmusic
+  # - title: github
+  #   url: https://curenova.github.io
 
 # # Postal address (add as many lines as necessary)
 # address:
