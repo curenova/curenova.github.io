@@ -23,12 +23,12 @@ baseurl:
 
 # Site settings
 title: Renova
-email: 
+email: renovanewmusic@gmail.com
 description: "CU-Boulder's New Music Choir"
 
 # Team names, titles and social links
 people:
-- name: Jessie Flasschoen-Campbell
+- name: Jessie Flasschoen Campbell
   pic: jessie
   position: Conductor
 
