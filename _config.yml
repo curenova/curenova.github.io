@@ -40,8 +40,8 @@ social:
   #   url: 
   # - title: facebook
   #   url:
-  # - title: instagram
-  #   url: 
+  - title: instagram
+    url: https://www.instagram.com/boulderenova/
   - title: youtube
     url: https://www.youtube.com/channel/UCvrnXD-6JE6PdixOdTbb-Sg
   - title: soundcloud
