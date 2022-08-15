@@ -71,7 +71,7 @@ timeline:
         year: "29 August 2022"
         desc: "Join us!"
         image: assets/img/timeline/auditions.png
-        link: https://curenova.github.io/#auditions#auditions
+        link: https://curenova.github.io/auditions#auditions
         alt:
         align: left
 
