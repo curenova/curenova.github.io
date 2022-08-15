@@ -1,0 +1,14 @@
+---
+title: 15 May 2022 @ 6pm - New Beginnings Concert
+subtitle: Westview Lutheran Church (6710 Arapahoe Rd, Boulder, CO 80303)
+layout: default
+modal-id: 1
+date: 2022-05-14
+img: 2022-05-15_poster.png
+alt: image-alt
+project-date: 15 May 2022 at 6pm
+location: Westview Lutheran Church, 6710 Arapahoe Rd, Boulder, CO 80303
+category: Concert
+description: Join us for our first official concert with music composed by our very own Ryan Flat, Sam C Henderson, O'Neil Jones, Jamie Lammers, JC Maynard, and Brandon Warren. Conducted by the incomparable Jessie Flasschoen-Campbell and O'Neil Jones!
+program: https://drive.google.com/file/d/1wDEx-_X0hoVYT1ihubkbAcUIMPYRz7ks/view?usp=sharing
+---
