@@ -1,91 +1,78 @@
-<!-- Team Section -->
-    <section id="team" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Amazing People</h2>
-                    <h3 class="section-subheading text-muted"></h3>
-                </div>
-            </div>
-            <div class="row">
-                {% for member in site.people %}
-                <div>
-                    <div class="team-member">
-                        <img src="img/team/jessie.jpg" class="img-responsive img-circle" alt="">
-                        <h4>{{ member.name }}</h4>
-                        <p class="text-muted">{{ member.position }}</p>
-                        <ul class="list-inline social-buttons">
-                            {% for network in member.social %}
-                            <li>
-                                <a href="{{ network.url }}">
-                                    <i class="fa fa-{{ network.title }}"></i>
-                                </a>
-                            </li>
-                            {% endfor %}
+<!-- Team -->
+<section class="bg-light page-section" id="{{ site.data.sitetext.team.section | default: "team" }}">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+			<h2 class="section-heading text-uppercase">Our Amazing People</h2>
+			<h3 class="section-subheading text-muted">{{ site.data.sitetext.team.text }}</h3>
+			</div>
+		</div>
+		<div class="row">
+			{% for person in site.data.sitetext.team.people %}
+					<div col-sm>
+						<div class="team-member">
+							{%- if person.url -%}
+								<a class="team-link" href="{{ person.url }}#{{ person.url }}">
+									<img class="mx-auto rounded-circle" src="{{ person.image }}" alt="">
+							</a>
+							{%- else -%}
+							<a class="team-link" data-toggle="modal" href="#{{ person.id }}">
+							<img class="mx-auto rounded-circle" src="{{ person.image }}" alt="">
+							</a>
+							{%- endif -%}
+							<h4>{{ person.name }}</h4>
+							<p class="text-muted">{{ person.role }}</p>
+							<ul class="list-inline social-buttons">
+							{% for network in person.social %}
+							<li class="list-inline-item">
+								<a href="{{ network.url }}">
+								<i class="{{ network.icon }}"></i>
+								</a>
+							</li>
+								{% endfor %}
+							</ul>
+							
+						</div>
+					</div>
+			{% endfor %}
+			<div class=" col-sm text-center">
+				<h4>Singers</h4>
+				<h5> Sopranos </h5>
+				<ul class="list-inline text-center" style="list-style: none;">
+					<li class="list-inline-item">Jessie Flasschoen Campbell</li>
+					<li class="list-inline-item">LJ Hansen</li>
+					<li class="list-inline-item">Corey Lynn Murphey</li>
+				</ul>   
+				<h5> Altos </h5>
+				<ul class="list-inline text-center" style="list-style: none;">
+					<li class="list-inline-item">Josie Arnett</li>
+					<li class="list-inline-item">Brianna Gress</li>
+					<li class="list-inline-item">Corinne Hansen</li>
+					<li class="list-inline-item">Emily Zalevsky</li>
+				</ul>   
+				<h5> Tenors </h5>
+				<ul class="list-inline text-center" style="list-style: none;">
+					<li class="list-inline-item">Sam C Henderson</li>
+					<li class="list-inline-item">Brandon Warren</li>
+				</ul>   
+				<h5> Basses </h5>
+				<ul class="list-inline text-center" style="list-style: none;">
+					<li class="list-inline-item">Ryan Flat</li>
+					<li class="list-inline-item">O'Neil Jones</li>
+					<li class="list-inline-item">Jamie Lammers</li>
+					<li class="list-inline-item">JC Maynard</li>
+					<li class="list-inline-item">Keenan Powell</li>
+				</ul>   
+				<h5> ...and <i>YOU</i>!  <a href="#contact">Join us!</a> </h5>
+				<br>
+	
+				<h4>Collaborators</h4>
+				<ul class="list-inline text-center" style="list-style: none;">
+					<li class="list-inline-item text-center">Lizzie French, <i>Collaborative Pianist</i></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
-                        </ul>
-                    </div>
-                </div>
-                {% endfor %}
-            </div>
-            <div class="row text-center">
-                <div class="columns2">
-                    <div class="text-center">
-                        <h4>Composers</h4>
-                        <ul class="list-inline d-flex" style="list-style: none;">
-                            <li class="list-inline-item">Ryan Flat</li>
-                            <li class="list-inline-item"><a href="http://www.samchenderson.com">Sam C Henderson</a></li>
-                            <li class="list-inline-item">Jamie Lammers</li>
-                            <li class="list-inline-item">O'Neil Jones</li>
-                            <li class="list-inline-item">JC Maynard</li>
-                            <li class="list-inline-item">Brandon Warren</li>
-                        </ul>
-                    </div>
-                    <br> <br>
-                    <div class="text-center">
-                        <h4>Collaborators</h4>
-                        <ul class="list-inline d-flex" style="list-style: none;">
-                            <li class="list-inline-item">Lizzie French, <i>Collaborative Pianist</i></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="columns2">
-                    <div class="text-center">
-                        <h4>Singers</h4>
-                        <h5> Sopranos </h5>
-                        <ul class="list-inline text-center" style="list-style: none;">
-                            <li class="list-inline-item">Jessie Flasschoen Campbell</li>
-                            <li class="list-inline-item">LJ Hansen</li>
-                            <li class="list-inline-item">Corey Lynn Murphey</li>
-                            <li class="list-inline-item">Mikaela Schindler</li>
-                        </ul>   
-                        <h5> Altos </h5>
-                        <ul class="list-inline text-center" style="list-style: none;">
-                            <li class="list-inline-item">Josie Arnett</li>
-                            <li class="list-inline-item">Brenda Berganza</li>
-                            <li class="list-inline-item">Brianna Gress</li>
-                            <li class="list-inline-item">Corinne Hansen</li>
-                            <li class="list-inline-item">Gabrielle Razafinjatovo</li>
-                            <li class="list-inline-item">Emily Zalevsky</li>
-                        </ul>   
-                        <h5> Tenors </h5>
-                        <ul class="list-inline text-center" style="list-style: none;">
-                            <li class="list-inline-item">Sam C Henderson</li>
-                            <li class="list-inline-item">Brandon Warren</li>
-                            <li class="list-inline-item">Chris Warren</li>
-                        </ul>   
-                        <h5> Basses </h5>
-                        <ul class="list-inline text-center" style="list-style: none;">
-                            <li class="list-inline-item">Ryan Flat</li>
-                            <li class="list-inline-item">Erich Brady</li>
-                            <li class="list-inline-item">O'Neil Jones</li>
-                            <li class="list-inline-item">Jamie Lammers</li>
-                            <li class="list-inline-item">JC Maynard</li>
-                            <li class="list-inline-item">Keenan Powell</li>
-                        </ul>   
-                        <h5> ...and <i>YOU</i>!  <a href="#contact">Join us!</a> </h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+</section>
+

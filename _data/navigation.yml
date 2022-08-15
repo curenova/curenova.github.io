@@ -1,0 +1,21 @@
+nav:
+  - title: "About"
+    section: about
+
+  - title: "Music"
+    section: portfolio
+    
+  - title: "Schedule"
+    section: timeline
+
+  - title: "People"
+    section: team
+
+  - title: "Composers"
+    url: composers
+    
+  - title: "Auditions"
+    url: auditions
+
+  - title: "Contact"
+    section: contact
