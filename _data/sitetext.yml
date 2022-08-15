@@ -71,12 +71,14 @@ timeline:
         year: "29 August 2022"
         desc: "Join us!"
         image: assets/img/timeline/auditions.png
+        link: https://curenova.github.io/#auditions#auditions
         alt:
         align: left
 
       - title: "Fall Concert"
         year: "13 November 2022"
         image: assets/img/timeline/auditions.png
+        link: https://curenova.github.io
         alt:
         align: right
     end: ""
