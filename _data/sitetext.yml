@@ -68,7 +68,7 @@ timeline:
     section: timeline
     events:
       - title: "2022 Auditions"
-        year: "29 August 2022"
+        year: "28 August 2022"
         desc: "Join us!"
         image: assets/img/timeline/auditions.png
         link: https://curenova.github.io/auditions#auditions
