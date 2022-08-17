@@ -88,7 +88,7 @@ composers:
     subtext: "Fabulous people who have written music for Renova!"
     section: composers
     people:
-      - name: "Sam Henderson"
+      - name: "Sam C Henderson"
         # image: assets/img/team/sam.jpg
         social:
           - url: https://www.samchenderson.com/
