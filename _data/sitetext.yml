@@ -74,13 +74,22 @@ timeline:
         link: https://curenova.github.io/auditions#auditions
         alt:
         align: left
-
-      - title: "Fall Concert"
-        year: "13 November 2022"
+        
+      - title: "Pendulum Concert"
+        year: "28 September 2022"
+        desc: "Performing Solitude by JC Maynard"
         image: assets/img/timeline/auditions.png
         link: https://curenova.github.io
         alt:
         align: right
+
+      - title: "Alchemy Concert"
+        year: "18 November 2022"
+        desc: "An immersive musical journey accompanied by newly composed music."
+        image: assets/img/timeline/auditions.png
+        link: https://curenova.github.io
+        alt:
+        align: left
     end: ""
 
 composers:
