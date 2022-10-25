@@ -2,29 +2,29 @@ header:
     text: Renova
     title: CU's New Music Ensemble
 
-services:
-    title: "About us"
-    text: "There are many diverse projects going on in the lab"
-    section: services
-    list:
-      - title: "Functional Genomics of Cellular Differentiation"
-        desc: "We use myogenesis and myeloid cell differentiation as models of differentiation in a dish for functional genomics. We use assays such RNA-seq, microRNA-seq, ATAC-seq, and ChIP-seq to understand how gene expression and chromatin state change in time courses of differentiation."
-        icon: fas fa-dna #find more at https://fontawesome.com/icons
-      - title: "Gene Regulatory Networks"
-        desc: "We are building models of gene regulatory networks using either bulk or single-cell RNA-seq, and ATAC-seq in human, rodents, and other vertebrates."
-        icon: fas fa-dna #find more at https://fontawesome.com/icons
-      - title: "Long-read Transcriptomics"
-        desc: "We are leveraging the PacBio and Oxford Nanopore platforms to sequence full-length transcripts to characterize the true extent of alternative splicing."
-        icon: fas fa-dna #find more at https://fontawesome.com/icons
-      - title: "Non-model Organisms"
-        desc: "Using functional genomics in animals besides the well-established model organisms."
-        icon: fas fa-dna #find more at https://fontawesome.com/icons
-      - title: "Model AD"
-        desc: "We are part of a NIA Consortium to build better late-onset Alzheimer’s Disease models in mouse. Our part includes both bioinformatics as well as single-cell transcriptomics."
-        icon: fas fa-brain
-      - title: "FSHD"
-        desc: "We are using functional genomics to understand the mechanisms driving the pathology of Facioscapulohumeral muscular dystrophy."
-        icon: fas fa-male
+# services:
+#     title: "About us"
+#     text: "There are many diverse projects going on in the lab"
+#     section: services
+#     list:
+#       - title: "Functional Genomics of Cellular Differentiation"
+#         desc: "We use myogenesis and myeloid cell differentiation as models of differentiation in a dish for functional genomics. We use assays such RNA-seq, microRNA-seq, ATAC-seq, and ChIP-seq to understand how gene expression and chromatin state change in time courses of differentiation."
+#         icon: fas fa-dna #find more at https://fontawesome.com/icons
+#       - title: "Gene Regulatory Networks"
+#         desc: "We are building models of gene regulatory networks using either bulk or single-cell RNA-seq, and ATAC-seq in human, rodents, and other vertebrates."
+#         icon: fas fa-dna #find more at https://fontawesome.com/icons
+#       - title: "Long-read Transcriptomics"
+#         desc: "We are leveraging the PacBio and Oxford Nanopore platforms to sequence full-length transcripts to characterize the true extent of alternative splicing."
+#         icon: fas fa-dna #find more at https://fontawesome.com/icons
+#       - title: "Non-model Organisms"
+#         desc: "Using functional genomics in animals besides the well-established model organisms."
+#         icon: fas fa-dna #find more at https://fontawesome.com/icons
+#       - title: "Model AD"
+#         desc: "We are part of a NIA Consortium to build better late-onset Alzheimer’s Disease models in mouse. Our part includes both bioinformatics as well as single-cell transcriptomics."
+#         icon: fas fa-brain
+#       - title: "FSHD"
+#         desc: "We are using functional genomics to understand the mechanisms driving the pathology of Facioscapulohumeral muscular dystrophy."
+#         icon: fas fa-male
 
 
 portfolio:
@@ -67,13 +67,13 @@ timeline:
     text: "What's happening?"
     section: timeline
     events:
-      - title: "2022 Auditions"
-        year: "28 August 2022"
-        desc: "Join us!"
-        image: assets/img/timeline/auditions.png
-        link: https://curenova.github.io/auditions#auditions
-        alt:
-        align: left
+      # - title: "2022 Auditions"
+      #   year: "28 August 2022"
+      #   desc: "Join us!"
+      #   image: assets/img/timeline/auditions.png
+      #   link: https://curenova.github.io/auditions#auditions
+      #   alt:
+      #   align: left
         
       - title: "Pendulum Concert"
         year: "28 September 2022"
@@ -85,11 +85,17 @@ timeline:
 
       - title: "Alchemy Concert"
         year: "18 November 2022"
-        desc: "An immersive musical journey accompanied by newly composed music."
-        image: assets/img/timeline/auditions.png
-        link: https://curenova.github.io
-        alt:
+        desc: "An immersive musical journey accompanied by newly composed music. RSVP below!"
+        image: assets/img/timeline/alchemy.jpeg
+        link: alchemy
+        alt: "Alchemy Concert"
         align: left
+
+      - title: Caroling at Chautauqua
+        year: "10 December 2022"
+        image: assets/img/timeline/auditions.png
+        align: right
+
     end: ""
 
 composers:
@@ -99,9 +105,9 @@ composers:
     people:
       - name: "Sam C Henderson"
         # image: assets/img/team/sam.jpg
-        social:
-          - url: https://www.samchenderson.com/
-            icon: fa fa-home
+        # social:
+        #   - url: https://www.samchenderson.com/
+        #     icon: fa fa-home
       - name: "JC Maynard"
         # image: assets/img/team/maynard.jpg
         info: "Description coming soon"
@@ -114,6 +120,7 @@ composers:
       - name: "Jamie Lammers"
       - name: "Keenan Powell"
       - name: "Josie Arnett"
+      - name: "Maggie Friesen"
 
 auditions:
     title: "Auditions"

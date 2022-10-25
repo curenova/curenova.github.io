@@ -1,34 +1,64 @@
 <!-- composers -->
-<section class="page-section" id="{{ site.data.sitetext.composers.section | default: "composers" }}">
-<div class="container">
-  <div class="row">
-	<div class="col-lg-12 text-center">
-	  <h2 class="section-heading text-uppercase">{{ site.data.sitetext.composers.title }}</h2>
-	  <h3 class="section-subheading text-muted">{{ site.data.sitetext.composers.text }}</h3>
-	</div>
-  </div>	
-  <div class="row">
-  {% for person in site.data.sitetext.composers.people %}
-	<div class="col-sm-4">
-	  <div class="composers-member">
-	    <a class="team-link" data-toggle="modal" href="#{{ person.id }}">
-		  <!-- <img class="mx-auto rounded-circle" src="{{ person.image }}" alt=""> -->
-	    </a>
-		<h4>{{ person.name }}</h4>
-		<p class="text-muted">{{ person.role }}</p>
-		<ul class="list-inline social-buttons">
-		{% for network in person.social %}
-		  <li class="list-inline-item">
-			<a href="{{ network.url }}">
-			  <i class="{{ network.icon }}"></i>
-			</a>
-		  </li>
-		{% endfor %}
+<section class="page-section" id="{{ site.data.sitetext.composers.section | default: " composers" }}">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 text-center">
+				<h2 class="section-heading text-uppercase">{{ site.data.sitetext.composers.title }}</h2>
+				<h3 class="section-subheading text-muted">{{ site.data.sitetext.composers.text }}</h3>
+			</div>
+		</div>
+		<div class="row">
+			{% for person in site.data.sitetext.composers.people %}
+			<div class="col-sm-4">
+				<div class="composers-member">
+					<a class="team-link" data-toggle="modal" href="#{{ person.id }}">
+						<!-- <img class="mx-auto rounded-circle" src="{{ person.image }}" alt=""> -->
+					</a>
+					<h4>{{ person.name }}</h4>
+					<p class="text-muted">{{ person.role }}</p>
+					<ul class="list-inline social-buttons">
+						{% for network in person.social %}
+						<li class="list-inline-item">
+							<a href="{{ network.url }}">
+								<i class="{{ network.icon }}"></i>
+							</a>
+						</li>
+						{% endfor %}
+					</ul>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+		<br><br>
+		<p class="text-muted text-center">And <b>you</b>! If you have a piece you would like us to consider singing,
+			please
+			submit <a
+				href="https://docs.google.com/forms/d/16VPMfsKZ3t7HGiHEpgHrCIIJudowQNtZskBH9IAdnXQ/edit?usp=drive_web">this
+				form</a>.
+		</p>
+		<br>
+		<h4 class="section-subheading text-muted text-center"> Submission Criteria </h4>
+		<ul class="text-center list-inline">
+			<li class="text-center">1. The piece must have no larger divisis than 8-part SSAATTBB, and
+				adhere to
+				reasonable <a href="https://web.library.yale.edu/cataloging/music/vocal-ranges">voice ranges</a>. (Note
+				that non-SATB music is also
+				acceptable,
+				such as SAA, TTB+Piano, etc.) </li>
+			<br>
+			<li class="text-center"> 2. The piece must not exceed 6 minutes in length.</li><br>
+			<li class="text-center">3. Any text must either be original, public domain, or used with
+				express permission of the writer. </li><br>
+			<li class="text-center">4. You must submit a PDF score of the full, complete piece.</li><br>
+			<li class="text-center">5. You must submit an audio file of the full score. MIDI audio is
+				acceptable.</li><br>
+			<li class="text-center">6. Scores that appear disorganized, unprepared, or incomplete will
+				not be accepted. For tips and tricks on
+				formatting and style for choral music, visit this helpful <a
+					href="https://wmgso.org/get-involved/arrangement-submission-guidelines/notation-style-content-and-formatting-guidelines">link.</a>
+			</li><br>
 		</ul>
-	  </div>
 	</div>
-  {% endfor %}
-  </div>
-</div>
+
 </section>
 <!-- composers -->

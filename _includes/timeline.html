@@ -1,55 +1,59 @@
 <!-- About -->
-  <section class="page-section" id="{{ site.data.sitetext.timeline.section | default: "about" }}">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">{{ site.data.sitetext.timeline.title | markdownify | default: "About" }}</h2>
-          <h3 class="section-subheading text-muted">{{ site.data.sitetext.timeline.text | default: "timeline"}}</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <ul class="timeline">
-		  {%- for event in site.data.sitetext.timeline.events -%}
-            {% if event.align == "right" %}
-			<li class="timeline-inverted">
-			{% else %}
-			<li>
-			{% endif %}
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="{{ event.image }}" alt="{{ event.alt | default: ""}}">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>{{ event.year | markdownify }}</h4>
-                  <h4 class="subheading"><a href="{{event.link}}">{{ event.title }}</a></h4>
-                </div>
-                <div class="timeline-body">
-                  <div class="text-muted">{{ event.desc | markdownify }}</div>
-                </div>
-              </div>
-            </li>
-		  {% endfor %}	
-            
-		  {% if site.data.sitetext.timeline.end %}	
-			<li class="timeline-inverted">
-              <div class="timeline-image">
-                <h4>{{ site.data.sitetext.timeline.end }}</h4>
-              </div>
-            </li>
-		  {% endif %}
-			
-          </ul>
-        </div>
+<section class="page-section" id="{{ site.data.sitetext.timeline.section | default: " about" }}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">{{ site.data.sitetext.timeline.title | markdownify | default: "About"
+          }}</h2>
+        <h3 class="section-subheading text-muted">{{ site.data.sitetext.timeline.text | default: "timeline"}}</h3>
       </div>
     </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="timeline">
+          {%- for event in site.data.sitetext.timeline.events -%}
+          {% if event.align == "right" %}
+          <li class="timeline-inverted">
+            {% else %}
+          <li>
+            {% endif %}
+            <div class="timeline-image">
+              <img class="img-fluid rounded-circle" src="{{ event.image }}" alt="{{ event.alt | default: ""}}">
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>{{ event.year | markdownify }}</h4>
+                <h4 class="subheading"><a href="{{event.link}}">{{ event.title }}</a></h4>
+              </div>
+              <div class="timeline-body">
+                <div class="text-muted">{{ event.desc | markdownify }}</div>
+              </div>
+            </div>
+          </li>
+          {% endfor %}
 
-      <div class = "row">
-          <div class="col-lg-12 text-center">
-              <br>
-              <h4>Full Schedule</h4>
+          {% if site.data.sitetext.timeline.end %}
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <h4>{{ site.data.sitetext.timeline.end }}</h4>
+            </div>
+          </li>
+          {% endif %}
 
-              <iframe src="https://calendar.google.com/calendar/embed?height=300&wkst=1&bgcolor=%239E69AF&ctz=America%2FDenver&title=Renova%20Concerts&mode=AGENDA&src=Y19sNzNiY2I3Mjc3dDh1NmdkMDlnaW1oY3JkZ0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%239E69AF" style="border:solid 1px #777" width="50%" height="300" frameborder="0" scrolling="no"></iframe>                </div>
+        </ul>
       </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <br>
+      <h4>Full Schedule</h4>
+
+      <iframe
+        src="https://calendar.google.com/calendar/embed?height=300&wkst=1&bgcolor=%239E69AF&ctz=America%2FDenver&title=Renova%20Concerts&mode=AGENDA&src=Y19sNzNiY2I3Mjc3dDh1NmdkMDlnaW1oY3JkZ0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%239E69AF"
+        style="border:solid 1px #777" width="50%" height="300" frameborder="0" scrolling="no"></iframe>
+    </div>
+  </div>
   </div>
 </section>
